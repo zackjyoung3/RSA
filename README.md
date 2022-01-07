@@ -37,13 +37,17 @@ to form a list where each element of the list corresponds to the encoded charact
 Then, in decryption I decode from the encrypted list using the private_key and obtain each character from the ascii value obtained from decryption.
 
 Note that the encryption and decryption work because Euler's Theorem which is a generalization of Fermat's little theorem
+
 Euler's Theorem: given a,n coprime, a^(phi(n)) (congruent)= 1 mod n
+
 (a) d*e (congruent) = 1 phi(n) => since d and e are positive d*e = 1 + q*phi(n) for some positive int q
+
 To Show: after encryption and decryption, the correct original message is obtained ie m^(e*d) (congruent)= m mod n
 - m^(e*d) = m^(1 + q*phi(n)) (from a)
 - m^(1 + q*phi(n)) = m*m^(q*phi(n)) = m*(m^(phi(n))^q
 - m*(m^(phi(n))^q (congruent)= m*1^q (from Euler's) (congruent)= m mod n
-- Therefore, m^(e*d) (congruent)= m mod n as required
+ 
+Therefore, m^(e*d) (congruent)= m mod n as required
 
 
 
