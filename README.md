@@ -6,7 +6,7 @@ user could enter in primes less than 100,000 for an example demonstration or an 
 to form ~1024 bit n.
 - for user entered primes, an instance of the Sieve class is created that contains an array where primes are marked with 1 and non primes with 0 using the 
 sieve of eratosthenes algorithm. Thus, when user enters input, it is an O(1) op to check whether the inputted number is prime. Note that I encode and decode
-using the ASCII value for chars and thus, it must be that n > 256
+using the ASCII value for chars and thus, it must be that n > 256 when computed using the user's p and q
 - for the random prime generation, the instance of the PrimeGenerator has the default value for bits of 512, and generates candidate 512 bit random numbers until 
 the candidate passes 40 rounds of the Miller-Rabin primality test making it sufficiently probable that the random number is indeed prime and note that running
 that running after this until failure could give an adversary time to crack one of the keys
