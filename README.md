@@ -12,10 +12,14 @@ the candidate passes 40 rounds of the Miller-Rabin primality test making it suff
 that running after this until failure could give an adversary time to crack one of the keys
 
 Then, phi(n) is computed using the beautiful number theory behind Euler's totient function
+
 (1) given prime a, phi(a) = (a-1)
+
 (2) given a,b coprime phi(a*b) = phi(a)*phi(b)
-since n = p*q => phi(n) = phi(p*q) = phi(p)*phi(q) from (2)
-since p,q prime => phi(p)*phi(q) = (p-1)(q-1)
+
+- since n = p*q => phi(n) = phi(p*q) = phi(p)*phi(q) from (2)
+- since p,q prime => phi(p)*phi(q) = (p-1)(q-1)
+
 Thus, phi(n) = (p-1)(q-1)
 
 Then, e is selected such that gcd(e,phi(n)) = 1
