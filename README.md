@@ -27,11 +27,11 @@ Then, e is selected such that gcd(e,phi(n)) = 1
 - gcd(e,phi(n)) = 1 is checked using the extended Euclidean algorithm which in my implementation also returns the gcd as a linear combination
 Thus, after running the extended Euclidean to confirm, gcd will be equal to 1 will be returned and s and t will be returned such that 
 
-s*phi(n) + t*e = 1(gcd)
+s *phi(n) + t *e = 1(gcd)
 
 (taking mod phi(n) of both sides obtain)
 
-d*e (congruent) = 1 phi(n)
+d*e (congruent) = 1 mod phi(n)
 
 d is the multiplicative inverse of e mod phi(n) and is kept private
 
