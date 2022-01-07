@@ -37,7 +37,7 @@ d is the multiplicative inverse of e mod phi(n) and is kept private
 
 e and n are made public
 Note that in my implementation I used the mod library because I found that it worked best with numbers of incredibly large length that would be generated in my 
-random prime generateion version of my implementation of RSA
+random prime generation version of my implementation of RSA
 public_key = Mod(e, n) makes it so that a ** public_key = a^e mod n
 private_key = Mod(d, n) makes it so that a ** private_key = a^d mod n, exactly as required
 
