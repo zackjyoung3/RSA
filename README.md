@@ -3,7 +3,7 @@ project I wanted to create an implementation of RSA cryptosystem that I had lear
 
 The first step in RSA is to generate primes p and q and letting n = p*q. For my implementation I created two different means of obtaining the primes. Either the 
 user could enter in primes less than 100,000 for an example demonstration or an instance of the PrimeGenerator class would be used to obtain 2 512 bit primes
-to form ~1024 bit n.
+to form approximately 1024 bit n.
 - for user entered primes, an instance of the Sieve class is created that contains an array where primes are marked with 1 and non primes with 0 using the 
 sieve of eratosthenes algorithm. Thus, when user enters input, it is an O(1) op to check whether the inputted number is prime. Note that I encode and decode
 using the ASCII value for chars and thus, it must be that n > 256 when computed using the user's p and q
